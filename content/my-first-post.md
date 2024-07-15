@@ -1,6 +1,11 @@
 +++
 title = 'My First Post'
-date = 2024-07-12T09:51:07-04:00
+date = 2024-07-15T18:06:04-04:00
 draft = false
+description = "Description"
+image = "/images/1s.webp"
+imageBig = "/images/1b.webp"
+categories = ["Software Engineering"]
+authors = ["Xavier Elon"]
+avatar= "/images/avatar.webp"
 +++
-This is my first markdown post!
