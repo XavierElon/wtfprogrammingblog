@@ -79,7 +79,45 @@ a {
     font-size: 14px;
 }
 
+.listItemTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listItemDetail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.listItemAvatar {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /* FOOTER END */
+
+/* LIST START */
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.listItemImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* LIST END */
 
 @media (max-width: 1536px) {
     .container {
