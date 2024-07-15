@@ -9,6 +9,41 @@
     <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Backend</title>
+      <link>http://localhost:1313/categories/backend/</link>
+      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
+      <guid>http://localhost:1313/categories/backend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coding</title>
+      <link>http://localhost:1313/categories/coding/</link>
+      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
+      <guid>http://localhost:1313/categories/coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Frontend</title>
+      <link>http://localhost:1313/categories/frontend/</link>
+      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
+      <guid>http://localhost:1313/categories/frontend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>http://localhost:1313/categories/javascript/</link>
+      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
+      <guid>http://localhost:1313/categories/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Next</title>
+      <link>http://localhost:1313/categories/next/</link>
+      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
+      <guid>http://localhost:1313/categories/next/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Software Engineering</title>
       <link>http://localhost:1313/categories/software-engineering/</link>
       <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
