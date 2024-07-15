@@ -99,6 +99,14 @@ a {
     border-radius: 50%;
 }
 
+.listItemCategory {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--bgSoft);
+    color: var(--textSoft);
+    font-size: 14px;
+}
+
 /* FOOTER END */
 
 /* LIST START */
