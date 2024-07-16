@@ -1,9 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Alpha Programming'
+
+paginate = 2
 
 [params]
-  description = "The fastest blog"
+  description = "Alpha Programming by Xavier Elon"
   dateFormat = "Jan 2, 2006"
 
 [taxonomies]

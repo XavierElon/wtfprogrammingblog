@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Tesla';
+  src: url('/fonts/TESLA.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --bg: #0b1529;
   --bgSoft: #1f3050;
@@ -18,7 +25,7 @@
 }
 
 body {
-  font-family: 'FightClub', sans-serif;
+  font-family: 'Tesla', sans-serif;
   background: var(--bg);
   color: var(--text);
 }
@@ -202,6 +209,7 @@ a {
 .page-item.disabled{
   background-color: #313845;
   cursor: not-allowed;
+  display: none;
 }
 
 /* LIST END */
