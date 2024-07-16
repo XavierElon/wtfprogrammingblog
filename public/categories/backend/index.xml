@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backend on Alpha Programming</title>
-    <link>http://localhost:1313/categories/backend/</link>
+    <link>https://example.org/categories/backend/</link>
     <description>Recent content in Backend on Alpha Programming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/categories/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/my-second-post/</link>
+      <link>https://example.org/my-second-post/</link>
       <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:1313/my-second-post/</guid>
+      <guid>https://example.org/my-second-post/</guid>
       <description>Test Content</description>
     </item>
   </channel>
