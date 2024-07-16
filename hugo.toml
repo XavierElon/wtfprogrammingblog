@@ -1,8 +1,9 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Alpha Programming'
+favicon = true
 
-paginate = 2
+paginate = 5
 
 [params]
   description = "Alpha Programming by Xavier Elon"

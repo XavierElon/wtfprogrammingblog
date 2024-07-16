@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Alpha Programming</title>
-    <link>https://example.org/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Alpha Programming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
-    <atom:link href="https://example.org/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xavier Elon</title>
-      <link>https://example.org/authors/xavier-elon/</link>
+      <link>http://localhost:1313/authors/xavier-elon/</link>
       <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>https://example.org/authors/xavier-elon/</guid>
+      <guid>http://localhost:1313/authors/xavier-elon/</guid>
       <description></description>
     </item>
   </channel>

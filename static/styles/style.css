@@ -1,3 +1,8 @@
+.fontSelector:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--text);
+}
+
 @font-face {
   font-family: 'FightClub';
   src: url('/fonts/FIGHTT3_.ttf') format('truetype');
@@ -10,6 +15,22 @@
   src: url('/fonts/TESLA.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+body.font-Tesla {
+  font-family: 'Tesla', sans-serif;
+}
+
+body.font-FightClub {
+  font-family: 'FightClub', sans-serif;
+}
+
+body.font-Arial {
+  font-family: Arial, sans-serif;
+}
+
+body.font-Georgia {
+  font-family: Georgia, serif;
 }
 
 :root {

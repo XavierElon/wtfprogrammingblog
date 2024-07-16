@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Next on Alpha Programming</title>
-    <link>https://example.org/categories/next/</link>
+    <link>http://localhost:1313/categories/next/</link>
     <description>Recent content in Next on Alpha Programming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
-    <atom:link href="https://example.org/categories/next/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/next/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Fourth Post</title>
-      <link>https://example.org/my-fourth-post/</link>
+      <link>http://localhost:1313/my-fourth-post/</link>
       <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>https://example.org/my-fourth-post/</guid>
+      <guid>http://localhost:1313/my-fourth-post/</guid>
       <description>Test Content</description>
     </item>
   </channel>
