@@ -6,7 +6,6 @@ const body = document.querySelector('body')
 document.body.className = mode
 
 toggle.addEventListener('click', () => {
-  console.log('click')
   localStorage.setItem('mode', mode === 'light' ? '' : 'light')
   body.classList.toggle('light')
 })
@@ -29,8 +28,6 @@ fontSelector.addEventListener('change', (e) => {
 /* Search */
 let searchIndex
 
-console.log('search')
-
 // Fetch the search index
 fetch('/index.json')
   .then((response) => response.json())
@@ -39,33 +36,32 @@ fetch('/index.json')
   })
 
 function performSearch() {
-  console.log('performing search')
   const query = document.getElementById('searchInput').value.toLowerCase()
-  const resultsContainer = document.getElementById('searchResults')
-  resultsContainer.innerHTML = ''
+  const listContainer = document.querySelector('.list')
 
   if (query.length < 2) {
-    resultsContainer.style.display = 'none'
+    // If the query is too short, show all posts
+    document.querySelectorAll('.listItem').forEach((item) => {
+      item.style.display = 'flex'
+    })
     return
   }
 
-  const results = searchIndex.filter((item) => item.title.toLowerCase().includes(query))
+  document.querySelectorAll('.listItem').forEach((item) => {
+    const title = item.querySelector('.listItemTitle a').textContent.toLowerCase()
+    const categories = Array.from(item.querySelectorAll('.listItemCategory')).map((category) => category.textContent.toLowerCase())
 
-  if (results.length > 0) {
-    results.forEach((item) => {
-      const div = document.createElement('div')
-      div.innerHTML = `<a href="${item.permalink}">${item.title}</a>`
-      resultsContainer.appendChild(div)
-    })
-    resultsContainer.style.display = 'block'
-  } else {
-    resultsContainer.innerHTML = '<div>No results found</div>'
-    resultsContainer.style.display = 'block'
-  }
+    if (title.includes(query) || categories.some((category) => category.includes(query))) {
+      item.style.display = 'flex'
+    } else {
+      item.style.display = 'none'
+    }
+  })
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput')
-  console.log('here')
-  searchInput.addEventListener('input', performSearch)
+  if (searchInput) {
+    searchInput.addEventListener('input', performSearch)
+  }
 })
