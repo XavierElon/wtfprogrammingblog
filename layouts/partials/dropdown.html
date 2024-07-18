@@ -1,0 +1,11 @@
+{{ $dropdownId := default "dropdown" (.Get "id") }}
+<link rel="stylesheet" href="/css/dropdown.css" />
+<div class="dropdown-container">
+  <button class="dropdown-button" onclick="toggleDropdown('{{ $dropdownId }}')">Toggle Dropdown</button>
+  <div id="{{ $dropdownId }}" class="dropdown-content">
+    <div class="dropdown-item">Item 1</div>
+    <div class="dropdown-item">Item 2</div>
+    <div class="dropdown-item">Item 3</div>
+    <div class="dropdown-item">Item 4</div>
+  </div>
+</div>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Alpha Programming</title>
-    <link>http://localhost:57839/categories/javascript/</link>
+    <link>http://localhost:1313/categories/javascript/</link>
     <description>Recent content in Javascript on Alpha Programming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
-    <atom:link href="http://localhost:57839/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Fourth Post</title>
-      <link>http://localhost:57839/my-fourth-post/</link>
+      <link>http://localhost:1313/my-fourth-post/</link>
       <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:57839/my-fourth-post/</guid>
+      <guid>http://localhost:1313/my-fourth-post/</guid>
       <description>Test Content</description>
     </item>
   </channel>
