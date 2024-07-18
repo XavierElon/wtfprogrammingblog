@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on Alpha Programming</title>
+    <title>JavaScript on Alpha Programming</title>
     <link>http://localhost:1313/categories/javascript/</link>
-    <description>Recent content in Javascript on Alpha Programming</description>
+    <description>Recent content in JavaScript on Alpha Programming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jul 2023 10:00:00 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Fourth Post</title>
-      <link>http://localhost:1313/my-fourth-post/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:1313/my-fourth-post/</guid>
-      <description>Test Content</description>
+      <title>WTF is the JavaScript Event Lifecycle?</title>
+      <link>http://localhost:1313/javascript-event-cycle/</link>
+      <pubDate>Thu, 20 Jul 2023 10:00:00 -0400</pubDate>
+      <guid>http://localhost:1313/javascript-event-cycle/</guid>
+      <description>Understanding the JavaScript Event Lifecycle JavaScript&amp;rsquo;s event handling mechanism is a crucial part of creating interactive web applications. Understanding the event lifecycle can help you write more efficient and powerful code. In this post, we&amp;rsquo;ll dive deep into the three phases of the event lifecycle: capturing, target, and bubbling.&#xA;The Three Phases of Event Propagation When an event occurs on an element, it doesn&amp;rsquo;t just affect that element. The event actually goes through three phases:</description>
     </item>
   </channel>
 </rss>

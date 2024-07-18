@@ -6,14 +6,6 @@
     <description>Recent content in Next on Alpha Programming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/next/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Fourth Post</title>
-      <link>http://localhost:1313/my-fourth-post/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:1313/my-fourth-post/</guid>
-      <description>Test Content</description>
-    </item>
   </channel>
 </rss>

@@ -970,6 +970,63 @@ a {
 
 /* RIGHTBAR END */
 
+.singleContent h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.singleContent h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.singleContent h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.singleContent h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.singleContent h5 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.singleContent h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.prose pre {
+  font-size: 0.8em; /* Adjust this value as needed */
+  line-height: 1.2;
+}
+
+.prose code {
+  font-size: 0.9em; /* Adjust this value as needed */
+}
+
 @media (max-width: 1536px) {
   .container {
     max-width: 1366px;
@@ -1033,10 +1090,18 @@ a {
   .footerLinks {
     display: none;
   }
+
+  .social {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
   .container {
     max-width: 475px;
+  }
+
+  .social {
+    display: none;
   }
 }

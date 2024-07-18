@@ -3,9 +3,9 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta name="description" content="Description" />
+    <meta name="description" content="A comprehensive guide to the JavaScript event lifecycle, including event capturing, bubbling, and how to use them effectively in your code." />
     <link rel="stylesheet" href="/styles/style.css" />
-    <title>My Fifth Post My Fifth Post</title>
+    <title>WTF is the JavaScript Event Lifecycle?</title>
     <link rel="stylesheet" href="/css/style.css"> <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
@@ -20,9 +20,9 @@
   </div>
 
   <select id="fontSelector" class="select-font fontSelector">
-    <option value="CYBERPUNK">CYBERPUNK</option>
     <option value="Tesla">Tesla</option>
     <option value="FightClub">Fight Club</option>
+    <option value="CYBERPUNK">CYBERPUNK</option>
     <option value="Arial">Arial</option>
     <option value="Georgia">Georgia</option>
   </select>
@@ -61,6 +61,8 @@
         
           <a href="/categories/software-engineering">software engineering</a>
         
+          <a href="/categories/web-development">web development</a>
+        
       </div>
     </div>
     
@@ -75,8 +77,8 @@
 <div class="single">
   <div class="singleHead">
     <div class="singleHeadTexts">
-      <h1 class="singleHeadTitle">My Fifth Post My Fifth Post</h1>
-      <p class="singleHeadDesc">Description</p>
+      <h1 class="singleHeadTitle">WTF is the JavaScript Event Lifecycle?</h1>
+      <p class="singleHeadDesc">A comprehensive guide to the JavaScript event lifecycle, including event capturing, bubbling, and how to use them effectively in your code.</p>
       <div class="singleHeadDetail">
         <img src="/images/avatar.webp" loading="lazy" alt="" class="singleAvatar" />
         <span
@@ -87,22 +89,88 @@
         
         <a href="http://localhost:1313/categories/software-engineering/" class="singleCategory">Software Engineering</a>
         
+        <a href="http://localhost:1313/categories/javascript/" class="singleCategory">JavaScript</a>
+        
+        <a href="http://localhost:1313/categories/web-development/" class="singleCategory">Web Development</a>
+        
       </div>
-      <time>Jul 15, 2024</time>
+      <time>Jul 20, 2023</time>
     </div>
-    <img src="/images/5b.webp" alt="My Fifth Post My Fifth Post" class="singleHeadImg" />
+    <img src="/images/js-event-lifecycle.webp" alt="WTF is the JavaScript Event Lifecycle?" class="singleHeadImg" />
   </div>
   <div class="singleBottom">
-    <div class="singleContent"><p>Test Content</p>
-</div>
-    <div class="singleRightBar"><div class="rightBar">
-  <img src="/images/ads.webp" alt="ad" class="rightBarImg" loading="lazy" />
-  <img src="/images/adh.webp" alt="ad" class="rightBarImgHr" loading="lazy" />
-</div>
-</div>
+    <div class="singleContent text-sm"><h1 id="understanding-the-javascript-event-lifecycle">Understanding the JavaScript Event Lifecycle</h1>
+<p>JavaScript&rsquo;s event handling mechanism is a crucial part of creating interactive web applications. Understanding the event lifecycle can help you write more efficient and powerful code. In this post, we&rsquo;ll dive deep into the three phases of the event lifecycle: capturing, target, and bubbling.</p>
+<h2 id="the-three-phases-of-event-propagation">The Three Phases of Event Propagation</h2>
+<p>When an event occurs on an element, it doesn&rsquo;t just affect that element. The event actually goes through three phases:</p>
+<ol>
+<li>Capturing Phase</li>
+<li>Target Phase</li>
+<li>Bubbling Phase</li>
+</ol>
+<p>Let&rsquo;s explore each of these in detail.</p>
+<h3 id="1-capturing-phase">1. Capturing Phase</h3>
+<p>In the capturing phase, the event starts from the root of the DOM tree and moves down to the target element. This phase is rarely used but can be powerful in certain scenarios.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Capturing phase: document&#39;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;myButton&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Capturing phase: button&#39;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#66d9ef">true</span>);
+</span></span></code></pre></div><h3 id="2-target-phase">2. Target Phase</h3>
+<p>This is when the event reaches the target element.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;myButton&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Target phase: button clicked&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h2 id="3-bubbling-phase">3. Bubbling Phase</h2>
+<p>After reaching the target, the event bubbles up through the DOM tree back to the root. This is the default behavior and the most commonly used phase.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Bubbling phase: body&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Bubbling phase: document&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Here&rsquo;s an example that demonstrates all three phases:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;outer&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inner&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myButton&#34;</span>&gt;Click me!&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">logPhase</span>(<span style="color:#a6e22e">phase</span>, <span style="color:#a6e22e">element</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">phase</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">element</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">outer</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;outer&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">inner</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;inner&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">button</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;myButton&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Capturing phase
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Capturing&#39;</span>, <span style="color:#e6db74">&#39;document&#39;</span>), <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">outer</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Capturing&#39;</span>, <span style="color:#e6db74">&#39;outer&#39;</span>), <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inner</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Capturing&#39;</span>, <span style="color:#e6db74">&#39;inner&#39;</span>), <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Capturing&#39;</span>, <span style="color:#e6db74">&#39;button&#39;</span>), <span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Bubbling phase
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Bubbling&#39;</span>, <span style="color:#e6db74">&#39;button&#39;</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inner</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Bubbling&#39;</span>, <span style="color:#e6db74">&#39;inner&#39;</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">outer</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Bubbling&#39;</span>, <span style="color:#e6db74">&#39;outer&#39;</span>));
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">logPhase</span>(<span style="color:#e6db74">&#39;Bubbling&#39;</span>, <span style="color:#e6db74">&#39;document&#39;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Target phase
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Target: button clicked&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div></div>
+    
   </div>
 </div>
- <div class="footer gradient-footer flex">
+ <div class="footer gradient-footer flex mt-16">
   <div class="footerLinks">
     <a href="http://xavierelon.com">Xavier Elon</a> | <a href="/categories">Categories</a> |
     <a href="/sitemap.xml">Sitemap</a>

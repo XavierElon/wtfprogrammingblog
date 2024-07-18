@@ -81,7 +81,6 @@
   .category-dropdown {
     position: relative;
     display: inline-block;
-    background-color: var(--bgSoft)
   }
   
   .dropdown-content {

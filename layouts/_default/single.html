@@ -20,8 +20,10 @@
     <img src="{{ .Params.imageBig }}" alt="{{.Title}}" class="singleHeadImg" />
   </div>
   <div class="singleBottom">
-    <div class="singleContent">{{ .Content }}</div>
+    <div class="singleContent text-sm prose prose-sm max-w-none">{{ .Content }}</div>
+    {{/*
     <div class="singleRightBar">{{ partial "rightBar" .}}</div>
+    */}}
   </div>
 </div>
 {{ end }}

@@ -17,7 +17,7 @@ toggle.addEventListener('click', () => {
 const fontSelector = document.querySelector('.fontSelector')
 
 // Set initial font based on localStorage or default to CYBERPUNK
-const savedFont = localStorage.getItem('font') || 'CYBERPUNK'
+const savedFont = localStorage.getItem('font') || 'Tesla'
 document.body.style.fontFamily = savedFont
 fontSelector.value = savedFont
 

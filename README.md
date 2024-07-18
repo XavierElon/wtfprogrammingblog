@@ -19,3 +19,8 @@ npm run start
 
 # Or use the combined command if you set it up in package.json
 `npm run build`
+
+### Debugging
+`npm cache clean --force`
+`rm -rf node_modules`
+`npm install`
