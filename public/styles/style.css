@@ -17,12 +17,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CYBERPUNK';
+  src: url('/fonts/Cyberpunk.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body.font-Tesla {
   font-family: 'Tesla', sans-serif;
 }
 
 body.font-FightClub {
   font-family: 'FightClub', sans-serif;
+}
+
+body.font-CYBERPUNK {
+  font-family: 'CYBERPUNK', sans-serif;
 }
 
 body.font-Arial {
