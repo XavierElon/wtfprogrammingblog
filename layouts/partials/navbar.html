@@ -27,6 +27,7 @@
     </div>
     <a href="/">Home</a>
     <a href="/categories">Categories</a>
+    {{/*
     <div class="searchButton">
       <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -35,6 +36,12 @@
         <path d="M20 20.75C19.9015 20.7504 19.8038 20.7312 19.7128 20.6934C19.6218 20.6557 19.5392 20.6001 19.47 20.53L15.34 16.4C15.2075 16.2578 15.1354 16.0697 15.1388 15.8754C15.1422 15.6811 15.221 15.4958 15.3584 15.3583C15.4958 15.2209 15.6812 15.1422 15.8755 15.1388C16.0698 15.1354 16.2578 15.2075 16.4 15.34L20.53 19.47C20.6704 19.6106 20.7493 19.8012 20.7493 20C20.7493 20.1987 20.6704 20.3893 20.53 20.53C20.4608 20.6001 20.3782 20.6557 20.2872 20.6934C20.1962 20.7312 20.0985 20.7504 20 20.75Z" fill="#cbd5e1" />
       </svg>
       <span>Search</span>
+    </div>
+    */}}
+
+    <div class="searchButton">
+      <input type="text" id="searchInput" placeholder="Search posts..." />
+      <div id="searchResults" class="search-results"></div>
     </div>
   </div>
 </nav>

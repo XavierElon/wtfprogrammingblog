@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://alphaprogramming.io/'
 languageCode = 'en-us'
 title = 'Alpha Programming'
 favicon = true
@@ -12,3 +12,6 @@ paginate = 5
 [taxonomies]
   category = "categories"
   author = "authors"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
