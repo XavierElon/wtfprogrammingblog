@@ -3,25 +3,27 @@ const mode = localStorage.getItem('mode') || ''
 const toggle = document.querySelector('.toggle')
 const body = document.querySelector('body')
 
-document.body.className = mode
+if (mode === 'light') {
+  body.classList.add('light')
+}
 
 toggle.addEventListener('click', () => {
-  localStorage.setItem('mode', mode === 'light' ? '' : 'light')
+  const newMode = body.classList.contains('light') ? '' : 'light'
+  localStorage.setItem('mode', newMode)
   body.classList.toggle('light')
 })
 
 // Font Selector
 const fontSelector = document.querySelector('.fontSelector')
 
-// Set initial font based on localStorage or default to Tesla
-const savedFont = localStorage.getItem('font') || 'Tesla'
-body.className = `font-${savedFont}`
+// Set initial font based on localStorage or default to CYBERPUNK
+const savedFont = localStorage.getItem('font') || 'CYBERPUNK'
+document.body.style.fontFamily = savedFont
 fontSelector.value = savedFont
 
 fontSelector.addEventListener('change', (e) => {
-  console.log(e.target.value)
   const selectedFont = e.target.value
-  body.className = `font-${selectedFont}`
+  document.body.style.fontFamily = selectedFont
   localStorage.setItem('font', selectedFont)
 })
 
@@ -65,3 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', performSearch)
   }
 })
+
+/* Button */
+const button = document.querySelector('.magic-button')
+let hue = 0
+
+function updateColors() {
+  hue = (hue + 1) % 360
+  button.style.setProperty('--color-1', `hsl(${hue}deg, 100%, 45%)`)
+  button.style.setProperty('--color-2', `hsl(${(hue + 30) % 360}deg, 100%, 45%)`)
+  button.style.setProperty('--color-3', `hsl(${(hue + 60) % 360}deg, 100%, 55%)`)
+  requestAnimationFrame(updateColors)
+}
+
+updateColors()
