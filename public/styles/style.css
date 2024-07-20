@@ -605,6 +605,7 @@ body.font-Georgia {
   --textSoft: #cbd2d9;
   --color-homepage-dark: hsla(200deg, 100%, 85%, 0.1);
   --color-homepage-light: hsl(210deg, 30%, 8%);
+  --color-primary: hsl(200deg, 50%, 60%)
 }
 
 * {
@@ -642,8 +643,6 @@ a {
 main {
   flex: 1 0 auto; /* Allow the main content to grow and push the footer down */
 }
-
-
 
 /* LIST START */
 
@@ -693,13 +692,14 @@ main {
 .listItemCategories {
   display: flex;
   gap: 10px;
+  background-color: var(--bg-soft);
 }
 
 .listItemCategory {
-  padding: 5px;
-  border-radius: 5px;
-  background-color: var(--bgSoft);
-  color: var(--textSoft);
+  padding: 3px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: white;
   font-size: 14px;
 }
 
