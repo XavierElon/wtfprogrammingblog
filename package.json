@@ -4,7 +4,8 @@
     "watch:css": "postcss assets/css/main.css -o assets/css/style.css --watch",
     "watch:hugo": "hugo server --disableFastRender",
     "start": "npm-run-all --parallel watch:*",
-    "build": "npm run build:css && hugo --minify"
+    "build": "npm run build:css && hugo --minify",
+    "restart-dev-server": "npm cache clean --force && rm -rf node_modules && npm install && npm start"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

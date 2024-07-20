@@ -1,12 +1,12 @@
 baseURL = 'https://alphaprogramming.io/'
 languageCode = 'en-us'
-title = 'Alpha Programming'
+title = 'WTFProgramming'
 favicon = true
 
 paginate = 5
 
 [params]
-  description = "Alpha Programming by Xavier Elon"
+  description = "WTFProgramming by Xavier Elon"
   dateFormat = "Jan 2, 2006"
   custom_css = ["css/style.css"]
 
