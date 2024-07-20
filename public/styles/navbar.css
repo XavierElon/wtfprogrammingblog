@@ -6,7 +6,7 @@
   position: sticky;
   top: 0;
   background-color: var(--bg);
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 .logo {
@@ -150,6 +150,10 @@
   .navbar .logo {
     font-size: 20px;
   }
+
+  .select-font {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -186,6 +190,10 @@
   }
 
   #searchInput {
+    display: none;
+  }
+
+  .searchButton {
     display: none;
   }
 }
