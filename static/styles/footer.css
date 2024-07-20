@@ -19,11 +19,14 @@
     padding-right: 50px;
     margin: auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 2rem;
   }
   
   .footerLinks {
-    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
     text-align: left;
   }
   
