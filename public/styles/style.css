@@ -910,7 +910,6 @@ main {
 
 /* MARKDOWN FORMATTING START */
 
-
 /* MEDIA QUERIES START */
 
 @media (max-width: 1536px) {
@@ -984,30 +983,12 @@ main {
   .listItemDesc {
     font-size: 1rem;
   }
-
-  .searchButton span{
-    display: none;
-  }
-
-  .footerLinks {
-    display: none;
-  }
-
-  .social {
-    display: none;
-  }
 }
 
 @media (max-width: 640px) {
   .container {
     max-width: 475px;
   }
-
-
-  .social {
-    display: none;
-  }
-
 }
 
 /* MEDIA QUERIES END */
