@@ -1,53 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Alpha Programming</title>
+    <title>Categories on WTFProgramming</title>
     <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on Alpha Programming</description>
+    <description>Recent content in Categories on WTFProgramming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jul 2024 18:06:04 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jul 2023 10:00:00 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Backend</title>
-      <link>http://localhost:1313/categories/backend/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:1313/categories/backend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coding</title>
-      <link>http://localhost:1313/categories/coding/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:1313/categories/coding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Frontend</title>
-      <link>http://localhost:1313/categories/frontend/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:1313/categories/frontend/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
+      <title>JavaScript</title>
       <link>http://localhost:1313/categories/javascript/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
+      <pubDate>Thu, 20 Jul 2023 10:00:00 -0400</pubDate>
       <guid>http://localhost:1313/categories/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Next</title>
-      <link>http://localhost:1313/categories/next/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
-      <guid>http://localhost:1313/categories/next/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Engineering</title>
       <link>http://localhost:1313/categories/software-engineering/</link>
-      <pubDate>Mon, 15 Jul 2024 18:06:04 -0400</pubDate>
+      <pubDate>Thu, 20 Jul 2023 10:00:00 -0400</pubDate>
       <guid>http://localhost:1313/categories/software-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Development</title>
+      <link>http://localhost:1313/categories/web-development/</link>
+      <pubDate>Thu, 20 Jul 2023 10:00:00 -0400</pubDate>
+      <guid>http://localhost:1313/categories/web-development/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,27 +1,29 @@
-// Theme Toggle
+/* THEME TOGGLE */
 const mode = localStorage.getItem('mode') || ''
 const toggle = document.querySelector('.toggle')
 const body = document.querySelector('body')
 
-document.body.className = mode
+if (mode === 'light') {
+  body.classList.add('light')
+}
 
 toggle.addEventListener('click', () => {
-  localStorage.setItem('mode', mode === 'light' ? '' : 'light')
+  const newMode = body.classList.contains('light') ? '' : 'light'
+  localStorage.setItem('mode', newMode)
   body.classList.toggle('light')
 })
 
-// Font Selector
+/* FONT SELECTOR */
 const fontSelector = document.querySelector('.fontSelector')
 
-// Set initial font based on localStorage or default to Tesla
+// Set initial font based on localStorage or default to CYBERPUNK
 const savedFont = localStorage.getItem('font') || 'Tesla'
-body.className = `font-${savedFont}`
+document.body.style.fontFamily = savedFont
 fontSelector.value = savedFont
 
 fontSelector.addEventListener('change', (e) => {
-  console.log(e.target.value)
   const selectedFont = e.target.value
-  body.className = `font-${selectedFont}`
+  document.body.style.fontFamily = selectedFont
   localStorage.setItem('font', selectedFont)
 })
 
@@ -64,4 +66,38 @@ document.addEventListener('DOMContentLoaded', () => {
   if (searchInput) {
     searchInput.addEventListener('input', performSearch)
   }
+})
+
+/* BUTTON */
+const button = document.querySelector('.magic-button')
+let hue = 0
+
+function updateColors() {
+  hue = (hue + 1) % 360
+  button.style.setProperty('--color-1', `hsl(${hue}deg, 100%, 45%)`)
+  button.style.setProperty('--color-2', `hsl(${(hue + 30) % 360}deg, 100%, 45%)`)
+  button.style.setProperty('--color-3', `hsl(${(hue + 60) % 360}deg, 100%, 55%)`)
+  requestAnimationFrame(updateColors)
+}
+
+updateColors()
+
+/* DROPDOWN */
+document.addEventListener('DOMContentLoaded', function () {
+  const categoryToggle = document.querySelector('.category-toggle')
+  const dropdownContent = document.querySelector('.dropdown-content')
+
+  categoryToggle.addEventListener('click', function (e) {
+    e.preventDefault()
+    dropdownContent.classList.toggle('show')
+  })
+
+  // Close the dropdown if clicked outside
+  window.addEventListener('click', function (e) {
+    if (!e.target.matches('.category-toggle')) {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show')
+      }
+    }
+  })
 })

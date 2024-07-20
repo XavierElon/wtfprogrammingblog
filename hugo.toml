@@ -1,13 +1,14 @@
 baseURL = 'https://alphaprogramming.io/'
 languageCode = 'en-us'
-title = 'Alpha Programming'
+title = 'WTFProgramming'
 favicon = true
 
 paginate = 5
 
 [params]
-  description = "Alpha Programming by Xavier Elon"
+  description = "WTFProgramming by Xavier Elon"
   dateFormat = "Jan 2, 2006"
+  custom_css = ["css/style.css"]
 
 [taxonomies]
   category = "categories"
@@ -15,3 +16,15 @@ paginate = 5
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true
+  style = "monokai"
+  tabWidth = 4
+  fontsize = "10px" 
