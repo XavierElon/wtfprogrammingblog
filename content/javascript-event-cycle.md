@@ -1,6 +1,6 @@
 +++
 title = 'WTF is the JavaScript Event Lifecycle?'
-date = 2023-07-20T10:00:00-04:00
+date = 2024-07-20T10:00:00-04:00
 draft = false
 description = "The Javascript Event Lifecycle has eluded even some of the most senior developers. If you've ever heard anyone mention the Javascript Event LifeCycle and thought \"WTF is the Javascript event life cycle\" then this post is for you."
 image = "/images/js-event-lifecycle.webp"
@@ -10,11 +10,11 @@ authors = ["Xavier Elon"]
 avatar = "/images/avatar.webp"
 +++
 
-# So What in the Actual Fuck is the Javascript Event Life Cycle and Why do I Need to Know About it?
+# So WTF is the Javascript Event Life Cycle and Why do I Need to Know About it?
 
 JavaScript’s event handling mechanism is a crucial part of creating interactive web applications. If you’ve ever found yourself muttering “What the fuck?” while debugging event issues, you’re not alone. Understanding the event lifecycle can help you write more efficient and powerful code. So, let’s dive deep into the three phases of the event lifecycle: capturing, target, and bubbling.
 
-## Why TF Should You Care About the Event Lifecycle?
+## Why Should You Care About the Event Lifecycle?
 
 Knowing how JavaScript handles events can save you a ton of headaches. It helps you manage user interactions more effectively and can prevent those pesky bugs that seem to come out of nowhere. Plus, it’s a fundamental concept that will make you a better developer. I promise you, you don't want to drop the ball if you get asked about the event lifecycle in an interview. That's why I'm here to help!
 
