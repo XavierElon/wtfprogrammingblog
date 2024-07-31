@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on WTFProgramming</title>
-    <link>https://alphaprogramming.io/categories/</link>
+    <link>http://localhost:52426/categories/</link>
     <description>Recent content in Categories on WTFProgramming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jul 2024 10:00:00 -0400</lastBuildDate>
-    <atom:link href="https://alphaprogramming.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52426/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Career</title>
-      <link>https://alphaprogramming.io/categories/career/</link>
+      <link>http://localhost:52426/categories/career/</link>
       <pubDate>Tue, 30 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>https://alphaprogramming.io/categories/career/</guid>
+      <guid>http://localhost:52426/categories/career/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>https://alphaprogramming.io/categories/machine-learning/</link>
+      <link>http://localhost:52426/categories/machine-learning/</link>
       <pubDate>Tue, 30 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>https://alphaprogramming.io/categories/machine-learning/</guid>
+      <guid>http://localhost:52426/categories/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Engineering</title>
-      <link>https://alphaprogramming.io/categories/software-engineering/</link>
+      <link>http://localhost:52426/categories/software-engineering/</link>
       <pubDate>Tue, 30 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>https://alphaprogramming.io/categories/software-engineering/</guid>
+      <guid>http://localhost:52426/categories/software-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>https://alphaprogramming.io/categories/javascript/</link>
+      <link>http://localhost:52426/categories/javascript/</link>
       <pubDate>Sat, 20 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>https://alphaprogramming.io/categories/javascript/</guid>
+      <guid>http://localhost:52426/categories/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Development</title>
-      <link>https://alphaprogramming.io/categories/web-development/</link>
+      <link>http://localhost:52426/categories/web-development/</link>
       <pubDate>Sat, 20 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>https://alphaprogramming.io/categories/web-development/</guid>
+      <guid>http://localhost:52426/categories/web-development/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://alphaprogramming.io/authors/</loc>
+    <loc>http://localhost:52426/authors/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/categories/career/</loc>
+    <loc>http://localhost:52426/categories/career/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/categories/</loc>
+    <loc>http://localhost:52426/categories/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/categories/machine-learning/</loc>
+    <loc>http://localhost:52426/categories/machine-learning/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/categories/software-engineering/</loc>
+    <loc>http://localhost:52426/categories/software-engineering/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/the-value-of-your-work/</loc>
+    <loc>http://localhost:52426/the-value-of-your-work/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/</loc>
+    <loc>http://localhost:52426/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/authors/xavier-elon/</loc>
+    <loc>http://localhost:52426/authors/xavier-elon/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/categories/javascript/</loc>
+    <loc>http://localhost:52426/categories/javascript/</loc>
     <lastmod>2024-07-20T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/categories/web-development/</loc>
+    <loc>http://localhost:52426/categories/web-development/</loc>
     <lastmod>2024-07-20T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://alphaprogramming.io/javascript-event-cycle/</loc>
+    <loc>http://localhost:52426/javascript-event-cycle/</loc>
     <lastmod>2024-07-20T10:00:00-04:00</lastmod>
   </url>
 </urlset>
