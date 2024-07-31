@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on WTFProgramming</title>
-    <link>http://localhost:1313/authors/</link>
+    <link>https://alphaprogramming.io/authors/</link>
     <description>Recent content in Authors on WTFProgramming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jul 2024 10:00:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://alphaprogramming.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xavier Elon</title>
-      <link>http://localhost:1313/authors/xavier-elon/</link>
+      <link>https://alphaprogramming.io/authors/xavier-elon/</link>
       <pubDate>Tue, 30 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>http://localhost:1313/authors/xavier-elon/</guid>
+      <guid>https://alphaprogramming.io/authors/xavier-elon/</guid>
       <description></description>
     </item>
   </channel>

@@ -24,3 +24,6 @@ npm run start
 `npm cache clean --force`
 `rm -rf node_modules`
 `npm install`
+
+### Build
+`hugo`

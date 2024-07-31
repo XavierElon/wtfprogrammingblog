@@ -2,39 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://alphaprogramming.io/authors/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/career/</loc>
+    <loc>https://alphaprogramming.io/categories/career/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://alphaprogramming.io/categories/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/machine-learning/</loc>
+    <loc>https://alphaprogramming.io/categories/machine-learning/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/software-engineering/</loc>
+    <loc>https://alphaprogramming.io/categories/software-engineering/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-value-of-your-work/</loc>
+    <loc>https://alphaprogramming.io/the-value-of-your-work/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://alphaprogramming.io/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/xavier-elon/</loc>
+    <loc>https://alphaprogramming.io/authors/xavier-elon/</loc>
     <lastmod>2024-07-30T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/javascript/</loc>
+    <loc>https://alphaprogramming.io/categories/javascript/</loc>
     <lastmod>2024-07-20T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/web-development/</loc>
+    <loc>https://alphaprogramming.io/categories/web-development/</loc>
     <lastmod>2024-07-20T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/javascript-event-cycle/</loc>
+    <loc>https://alphaprogramming.io/javascript-event-cycle/</loc>
     <lastmod>2024-07-20T10:00:00-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/life/</loc>
   </url>
 </urlset>
