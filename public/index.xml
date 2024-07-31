@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WTFProgramming</title>
-    <link>http://localhost:52426/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on WTFProgramming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jul 2024 10:00:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:52426/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is the Value of Your Work?</title>
-      <link>http://localhost:52426/the-value-of-your-work/</link>
+      <link>http://localhost:1313/the-value-of-your-work/</link>
       <pubDate>Tue, 30 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>http://localhost:52426/the-value-of-your-work/</guid>
+      <guid>http://localhost:1313/the-value-of-your-work/</guid>
       <description>Knowing the Value of Your Work This is not going to be a typical software engineering post about some obscure practice or technicality. Rather it is going to be about something I consider much more important, the value of your work.&#xA;Value Your Yourself. Know Your Worth It is beginning of August 2024. The software engineering job market has not been kind to applicants as of lately. This is one of the most important times to understand your worth as a software engineer or you may sell yourself short.</description>
     </item>
     <item>
       <title>WTF is the JavaScript Event Lifecycle?</title>
-      <link>http://localhost:52426/javascript-event-cycle/</link>
+      <link>http://localhost:1313/javascript-event-cycle/</link>
       <pubDate>Sat, 20 Jul 2024 10:00:00 -0400</pubDate>
-      <guid>http://localhost:52426/javascript-event-cycle/</guid>
+      <guid>http://localhost:1313/javascript-event-cycle/</guid>
       <description>So WTF is the Javascript Event Life Cycle and Why do I Need to Know About it? JavaScript’s event handling mechanism is a crucial part of creating interactive web applications. If you’ve ever found yourself muttering “What the fuck?” while debugging event issues, you’re not alone. Understanding the event lifecycle can help you write more efficient and powerful code. So, let’s dive deep into the three phases of the event lifecycle: capturing, target, and bubbling.</description>
     </item>
   </channel>

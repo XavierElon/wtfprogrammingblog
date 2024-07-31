@@ -25,5 +25,8 @@ npm run start
 `rm -rf node_modules`
 `npm install`
 
+### Start Dev Server
+`npm run start`
+
 ### Build
 `hugo`
