@@ -30,9 +30,8 @@
     text-align: left;
   }
   
-  .gradient-footer {
+  .footer-gradient {
     background: linear-gradient(0deg, var(--color-homepage-light), var(--color-homepage-dark));
-    /* Add any additional footer styles here */
   }
   
   .social {

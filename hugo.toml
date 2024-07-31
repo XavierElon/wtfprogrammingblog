@@ -11,7 +11,7 @@ paginate = 5
   custom_css = ["css/style.css"]
 
 [parms.meta]
-  favico = true
+  favicon = true
 
 [taxonomies]
   category = "categories"
