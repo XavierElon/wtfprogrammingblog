@@ -718,10 +718,13 @@ main {
 
 .listImage {
   flex: 0 0 auto;
-  width: 40%;
-  max-width: 500px;
-  aspect-ratio: 16 / 9;
+  width: 50%;
+  max-width: 250px;
+  max-height: 250px; /* Adjust this value as needed */
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .listImageItem {
