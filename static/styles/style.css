@@ -96,6 +96,8 @@ a {
   text-decoration: inherit;
 }
 
+
+
 /*
 Add the correct font weight in Edge and Safari.
 */
@@ -120,6 +122,67 @@ pre {
   font-feature-settings: normal; /* 2 */
   font-variation-settings: normal; /* 3 */
   font-size: 1em; /* 4 */
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.singleContent ul,
+.singleContent ol {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}
+
+.singleContent ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+.singleContent ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+.singleContent li {
+  margin-bottom: 0.5em;
+}
+
+.singleContent ul ul,
+.singleContent ol ul {
+  list-style-type: circle;
+  margin: 0.5em 0;
+}
+
+.singleContent ul ol,
+.singleContent ol ol {
+  list-style-type: lower-alpha;
+  margin: 0.5em 0;
+}
+
+/* General link styling */
+.singleContent a {
+  color: #3498db; /* Change this to your preferred link color */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Hover state for links */
+.singleContent a:hover {
+  color: #2980b9; /* A slightly darker shade for hover state */
+}
+
+/* Visited link color, if desired */
+.singleContent a:visited {
+  color: #8e44ad;
 }
 
 /*
