@@ -42,6 +42,13 @@ html,
   -webkit-tap-highlight-color: transparent; /* 7 */
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
@@ -677,7 +684,7 @@ body.font-Georgia {
 }
 
 body {
-  font-family: 'Tesla', sans-serif;
+  font-family: Georgia, sans-serif;
   background: var(--bg);
   color: var(--text);
 }
@@ -694,13 +701,11 @@ a {
 
 .container {
   max-width: 1366px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 main {

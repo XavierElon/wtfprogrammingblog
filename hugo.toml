@@ -1,4 +1,4 @@
-baseURL = 'https://alphaprogramming.io/'
+baseURL = 'https://wtfprogramming.io/'
 languageCode = 'en-us'
 title = 'WTFProgramming'
 favicon = true

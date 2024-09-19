@@ -1,13 +1,13 @@
 +++
-title = 'What is the Value of Your Work?'
-date = 2024-07-30T10:00:00-04:00
+title = 'Is A Masters in Computer Science Worth It?'
+date = 2024-09-19T17:01:49-04:00
 draft = false
-description = "Knowing the value of your work is extremely important in navigating the software engineering field. There are too many people who are incorrectly valuing themselves which leads to poor career opportunities."
-image = "/images/value-of-your-work.webp"
-imageBig = "/images/value-of-your-work.webp"
-categories = ["Software Engineering", "Career", "Machine Learning"]
+description = ""
+image = ""
+imageBig = ""
+categories = ["Software Engineering"]
 authors = ["Xavier Elon"]
-avatar = "/images/avatar.webp"
+avatar= "/images/avatar.webp"
 +++
 
 # Knowing the Value of Your Work
