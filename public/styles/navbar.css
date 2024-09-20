@@ -1,21 +1,28 @@
 .navbar {
-  width: 100%;
-  position: relative;
-  display: flex;
+  width: 110vw;
+  position: static;
+  display:flex;
+  left: 50%;
+  right: 50%;
+  margin-left: -20vw;
   gap: 2rem;
   background: linear-gradient(0deg, var(--color-homepage-dark), var(--color-homepage-light));
-}
+
 
 .navbar-container {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 1366px;
+  padding-left: 50px;
+  padding-right: 50px;
   justify-content: space-between;
+  padding: 10px 20px;
+  top: 0;
   gap: 2rem;
+  margin: auto;
+  z-index: 1000;
+  margin-bottom: 50px;
 }
 
 .logo {
