@@ -1,13 +1,13 @@
 .navbar {
   width: 110vw;
   position: static;
-  display:flex;
+  display: flex;
   left: 50%;
   right: 50%;
   margin-left: -20vw;
   gap: 2rem;
   background: linear-gradient(0deg, var(--color-homepage-dark), var(--color-homepage-light));
-
+}
 
 .navbar-container {
   display: flex;
@@ -51,7 +51,9 @@
   border-radius: 4px;
 }
 
-.toggle, .category-dropdown, .searchButton {
+.toggle,
+.category-dropdown,
+.searchButton {
   flex: 0 0 auto;
 }
 
@@ -62,7 +64,7 @@
   background-color: var(--bgSoft);
   color: var(--textSoft);
 }
-  
+
 .search-results {
   position: absolute;
   top: 100%;
@@ -75,14 +77,14 @@
   overflow-y: auto;
   z-index: 1000;
 }
-  
+
 .search-results a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color: black;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
 }
- 
+
 .search-results a:hover {
   background: #f0f0f0;
 }
@@ -96,25 +98,25 @@
   overflow-y: auto;
   z-index: 1000;
 }
-  
+
 .search-results div {
   padding: 10px;
   border-bottom: 1px solid #eee;
 }
-  
+
 .search-results a {
   color: #333;
   text-decoration: none;
 }
-  
+
 .search-results a:hover {
   text-decoration: underline;
 }
-  
+
 .search-container {
   margin-bottom: 20px;
 }
-  
+
 #searchInput {
   width: 100%;
   padding: 5px;
@@ -132,28 +134,28 @@
   position: relative;
   display: inline-block;
 }
-  
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: var(--bgSoft);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 5px;
 }
-  
+
 .dropdown-content a {
   color: var(--text);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-  
+
 .dropdown-content a:hover {
   background-color: var(--bg);
 }
-  
+
 .show {
   display: block;
 }
@@ -161,11 +163,9 @@
 /* MEDIA QUERIES START */
 
 @media (max-width: 1536px) {
-
 }
 
 @media (max-width: 1366px) {
-
 }
 
 @media (max-width: 1280px) {
@@ -210,8 +210,6 @@
     justify-content: space-evenly;
     justify-content: center;
   }
-
- 
 }
 
 @media (max-width: 640px) {
