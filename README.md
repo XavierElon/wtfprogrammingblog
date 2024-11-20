@@ -5,7 +5,7 @@ Create new post:
 
 ### Start the CSS watcher and Hugo server
 
-npm run start
+`npm run start`
 
 ### This runs both commands concurrently:
 
