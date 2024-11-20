@@ -540,6 +540,9 @@ video {
 .mt-16 {
   margin-top: 4rem;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
 .block {
   display: block;
 }
@@ -572,6 +575,9 @@ video {
 }
 .rounded {
   border-radius: 0.25rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .bg-blue-500 {
   --tw-bg-opacity: 1;

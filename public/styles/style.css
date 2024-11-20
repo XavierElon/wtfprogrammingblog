@@ -728,10 +728,22 @@ main {
 }
 
 .listImageItem {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.listImageItem {
+  border-radius: 1rem !important;
+}
+
+.listImageItem img {
+  border-radius: 1rem;
+}
+
+.singleContent img {
+  border-radius: 10px; /* Adjust the value as needed */
 }
 
 .listItemTexts {

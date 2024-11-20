@@ -2,7 +2,7 @@
 title = 'Is a Masters in Computer Science Worth It?'
 date = 2024-10-14T05:30:14-04:00
 draft = false
-description = ""
+description = "Should you pursue a Master's degree in Computer Science?"
 image = "/images/is-cs-degree-worth-it.jpeg"
 imageBig = "/images/is-cs-degree-worth-it.jpeg"
 categories = ["Software Engineering", "Career", "Education"]
