@@ -3,8 +3,8 @@ title = 'WTF is the JavaScript Event Lifecycle?'
 date = 2024-07-20T10:00:00-04:00
 draft = false
 description = "The Javascript Event Lifecycle has eluded even some of the most senior developers. If you've ever heard anyone mention the Javascript Event LifeCycle and thought \"WTF is the Javascript event life cycle\" then this post is for you."
-image = "/images/js-event-lifecycle.webp"
-imageBig = "/images/js-event-lifecycle.webp"
+image = "/images/javascript-event-life-cycle.jpeg"
+imageBig = "/images/javascript-event-life-cycle.jpeg"
 categories = ["Software Engineering", "JavaScript", "Web Development"]
 authors = ["Xavier Elon"]
 avatar = "/images/avatar.webp"
@@ -32,16 +32,24 @@ Let’s break these down, shall we?
 
 In the capturing phase, the event starts from the root of the DOM tree and moves down to the target element. Think of it as the event saying, “Excuse me, coming through!” as it makes its way to the button you just clicked.
 
- This phase is rarely used but can be powerful in certain scenarios.
+This phase is rarely used but can be powerful in certain scenarios.
 
 ```javascript
-document.addEventListener('click', function() {
+document.addEventListener(
+  'click',
+  function () {
     console.log('Capturing phase: document');
-}, true);
+  },
+  true
+);
 
-document.getElementById('myButton').addEventListener('click', function() {
+document.getElementById('myButton').addEventListener(
+  'click',
+  function () {
     console.log('Capturing phase: button');
-}, true);
+  },
+  true
+);
 ```
 
 ### 2. **Target Phase**
@@ -49,8 +57,8 @@ document.getElementById('myButton').addEventListener('click', function() {
 This is when the event reaches the target element. It’s like the event finally gets to the button and says, “Hey, I’m here!”
 
 ```javascript
-document.getElementById('myButton').addEventListener('click', function() {
-    console.log('Target phase: button clicked');
+document.getElementById('myButton').addEventListener('click', function () {
+  console.log('Target phase: button clicked');
 });
 ```
 
@@ -59,32 +67,32 @@ document.getElementById('myButton').addEventListener('click', function() {
 After reaching the target, the event bubbles up through the DOM tree back to the root. This is the default behavior and the most commonly used phase. Think of it as the event saying, “Mission accomplished, heading back now.”
 
 ```javascript
-document.body.addEventListener('click', function() {
-    console.log('Bubbling phase: body');
+document.body.addEventListener('click', function () {
+  console.log('Bubbling phase: body');
 });
 
-document.addEventListener('click', function() {
-    console.log('Bubbling phase: document');
+document.addEventListener('click', function () {
+  console.log('Bubbling phase: document');
 });
 ```
 
 ### **Putting It All Together**
+
 Here's an example that demonstrates all three phases:
 
 ```html
 <div id="outer">
-    <div id="inner">
-        <button id="myButton">Click me!</button>
-    </div>
+  <div id="inner">
+    <button id="myButton">Click me!</button>
+  </div>
 </div>
 ```
 
 ```javascript
-
 function logPhase(phase, element) {
-    return function() {
-        console.log(phase + ': ' + element);
-    }
+  return function () {
+    console.log(phase + ': ' + element);
+  };
 }
 
 const outer = document.getElementById('outer');
@@ -104,8 +112,8 @@ outer.addEventListener('click', logPhase('Bubbling', 'outer'));
 document.addEventListener('click', logPhase('Bubbling', 'document'));
 
 // Target phase
-button.addEventListener('click', function() {
-    console.log('Target: button clicked');
+button.addEventListener('click', function () {
+  console.log('Target: button clicked');
 });
 ```
 
@@ -128,23 +136,24 @@ Bubbling: document
 Sometimes, you might want to stop an event from propagating further. You can do this using event.stopPropagation().
 
 ```javascript
-button.addEventListener('click', function(event) {
-    console.log('Button clicked');
-    event.stopPropagation();
+button.addEventListener('click', function (event) {
+  console.log('Button clicked');
+  event.stopPropagation();
 });
 
-document.body.addEventListener('click', function() {
-    console.log('This will not be logged when button is clicked');
+document.body.addEventListener('click', function () {
+  console.log('This will not be logged when button is clicked');
 });
 ```
 
 ### **Preventing Default Behavior**
+
 Some elements have default behaviors (like form submission or link navigation). You can prevent these using event.preventDefault().
 
 ```javascript
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    console.log('Form submission prevented');
+document.getElementById('myForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+  console.log('Form submission prevented');
 });
 ```
 
@@ -152,13 +161,13 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
 Understanding the event lifecycle can help in various real-world scenarios:
 
-	• Form Validation: Capture form submit events to validate data before sending it to the server.
-	• Dynamic UI Updates: Manage complex UI interactions by capturing and bubbling events efficiently.
-	• Event Delegation: Use capturing and bubbling to handle events on multiple child elements through a single parent.
+    • Form Validation: Capture form submit events to validate data before sending it to the server.
+    • Dynamic UI Updates: Manage complex UI interactions by capturing and bubbling events efficiently.
+    • Event Delegation: Use capturing and bubbling to handle events on multiple child elements through a single parent.
 
 ### **Conclusion**
 
 Understanding the JavaScript event lifecycle is crucial for creating robust and efficient web applications. By mastering event capturing, bubbling, and knowing how to control event propagation, you can create more sophisticated event handling systems and solve complex interaction problems in your web applications.
-Remember, while bubbling is more commonly used, there are scenarios where capturing can be incredibly useful. Always choose the approach that best fits your specific use case. 
+Remember, while bubbling is more commonly used, there are scenarios where capturing can be incredibly useful. Always choose the approach that best fits your specific use case.
 
 Hopefully after reading this you no longer ask yourself "WTF is the Javascript Event Lifecycle" :)
