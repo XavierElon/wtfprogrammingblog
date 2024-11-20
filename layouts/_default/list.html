@@ -1,9 +1,14 @@
 {{ define "main" }}
-<div class="list">
+<div class="list mt-4">
   {{ range .Paginator.Pages }}
   <div class="listItem">
     <div class="w-[1200px] h-[400px] listImage overflow-hidden">
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="listImageItem w-full h-full object-cover object-center" loading="lazy" />
+      <img
+        src="{{ .Params.image }}"
+        alt="{{ .Title }}"
+        class="listImageItem w-full h-full object-cover object-center rounded-xl"
+        loading="lazy"
+      />
     </div>
     <div class="listItemTexts">
       <h1 class="listItemTitle text-4xl">
@@ -11,7 +16,12 @@
       </h1>
       <p class="listItemDesc text-xl">{{.Params.description}}</p>
       <div class="listItemDetail">
-        <img src="{{.Params.avatar}}" loading="lazy" alt="" class="listItemAvatar" />
+        <img
+          src="{{.Params.avatar}}"
+          loading="lazy"
+          alt=""
+          class="listItemAvatar"
+        />
         <span>
           {{ range (.GetTerms "authors") }}
           <a class="listItemAuthor" href="{{ .Permalink }}">{{ .Name }}</a>
