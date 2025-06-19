@@ -30,4 +30,10 @@ paginate = 5
   noClasses = true
   style = "monokai"
   tabWidth = 4
-  fontsize = "10px" 
+  fontsize = "10px"
+
+[build]
+  writeStats = true
+
+[server]
+  disableFastRender = true 
